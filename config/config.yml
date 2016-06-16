@@ -1,0 +1,17 @@
+tableau: 
+    server: "https://tableauserver.com"
+    user: "admin"
+    password: "password"
+    certpath: "/usr/local/share/ca-certificates/tabcert.crt"
+ldap: 
+    host: "ldaps://ldap.com:636"
+    bindDN: "uid=user,cn=users,dc=example,dc=com"
+    password: "password"
+    groupsbaseDN: "cn=groups,dc=example,dc=com"
+    usersbaseDN: "cn=users,dc=example,dc=com"
+    userobjectclass: "inetOrgPerson"
+    checkforpasswordexpiry: True
+    passwordExpirationLimit: 50
+    #options for group group mode
+    groupgroup: "tableaugroups"
+    
